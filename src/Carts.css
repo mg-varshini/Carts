@@ -1,0 +1,36 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    background:rgb(152, 76, 76);
+}
+input{
+    border:black 3px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+table{
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+td{
+    border: 2px black solid;
+    padding: 5px 10px;
+}
+table td:first-child{
+    font-weight: 600;
+}
+form{
+    width: 250px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
