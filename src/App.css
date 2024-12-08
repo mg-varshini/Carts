@@ -1,42 +1,118 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #2f3640;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 350px;
+  padding:20px ;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.l);
+}
+.search-icon img{
+  width: 20px;
+  height: 20px;
+}
+.input-cointainer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid #70e6f3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityInput{
+  flex: 1;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+.search-icon{
+  margin-top: 5px;
+}
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.image img{
+  width: 160px;
+  height: 160px;
+} 
+.temp, .city, .country{
+  margin-top:5px ;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+
+}
+.temp{
+  font-weight: 500;
+}
+.city{
+  color: #ffbc00;
+  font-weight: 400;
+  font-size: 40px;
+}
+.country{
+  font-size: 18px;
+  color: #888;
+  font-weight: 500;
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
   text-align: center;
 }
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.hum-percent,.wind-percent,
+.cord div span:last-child{
+  font-weight: bold;
+  font-size: 40px;
+  color: #666;
+  padding-top: 5px;
+}
+.element img{
+  width: 75px;
+  height: 75px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element{
+  text-align: center;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
+.text{
+  font-size: 12px;
   color: #888;
+}
+.citynotfound,
+.loading,
+.errormsg{
+  margin-top: 10px;
+  color:#888;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
 }
